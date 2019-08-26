@@ -1,18 +1,19 @@
 set encoding=utf-8
 scriptencoding utf-8
+set directory^=$HOME/.vimfiles/swap//
 
 runtime! ~/vimfiles/autoload/plug.vim
 call plug#begin('~/.vim/plugged')
-	Plug 'mhinz/vim-startify'	
-	Plug 'scrooloose/nerdtree'
-	Plug 'fatih/vim-go'
-	Plug 'airblade/vim-gitgutter'
-	Plug 'vim-airline/vim-airline'
-	Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-startify'	
+Plug 'scrooloose/nerdtree'
+Plug 'fatih/vim-go'
+Plug 'airblade/vim-gitgutter'
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 if exists('+colorcolumn')
-  set colorcolumn=80
+	set colorcolumn=80
 endif
 
 colorscheme desert
@@ -45,7 +46,7 @@ map <C-l> <C-w>l
 " Quickly handle buffers
 noremap <C-o> :bprevious<CR>
 noremap <C-p> :bnext<CR>
-noremap <C-d> :execute ':bd' . bufnr('%')<CR>
+noremap <C-d> :bn <bar> :bd #<CR>
 
 " Show whitespace
 set lcs=tab:..,trail:_,nbsp:~,precedes:<,extends:>
