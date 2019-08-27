@@ -44,8 +44,12 @@ if exists('+colorcolumn')
 	set colorcolumn=80
 endif
 
+" Colorscheme
 set background=dark
-colorscheme solarized
+" colorscheme solarized
+" autocmd ColorScheme janah highlight Normal ctermbg=235
+colorscheme janah
+
 syntax on
 filetype plugin indent on
 set nu
@@ -58,6 +62,12 @@ set matchpairs+=<:> " use % to jump between pairs
 
 " Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
 set splitbelow splitright
+
+" Save close NERDTree on leaVE
+autocmd VimLeave * NERDTreeClose
+
+" Put NERDTree on right side
+let g:NERDTreeWinPos = "right"
 
 " Airline
 let g:airline_theme='solarized'
@@ -79,7 +89,10 @@ nnoremap <C-l> <C-w>l
 " Quickly handle buffers
 nnoremap <C-o> :bprevious<CR>
 nnoremap <C-p> :bnext<CR>
-nnoremap <C-d> :bn <bar> :bd #<CR>
+" Hides window
+nnoremap <C-d> :hide<CR>
+" Deletes buffer -> the same as :bdel
+" nnoremap <C-d> :bn <bar> :bd #<CR>
 
 " Close window
 nnoremap <C-q> <C-w>q
