@@ -25,6 +25,8 @@
 
 set encoding=utf-8
 scriptencoding utf-8
+
+" Windows only
 set directory^=$HOME/.vimfiles/swap//
 
 runtime! ~/vimfiles/autoload/plug.vim
@@ -46,9 +48,10 @@ endif
 
 " Colorscheme
 set background=dark
-" colorscheme solarized
-" autocmd ColorScheme janah highlight Normal ctermbg=235
 colorscheme janah
+
+" If colorscheme does not work on terminals
+" autocmd ColorScheme janah highlight Normal ctermbg=235
 
 syntax on
 filetype plugin indent on
@@ -60,22 +63,22 @@ set mouse=a
 set backspace=indent,eol,start
 set matchpairs+=<:> " use % to jump between pairs
 
-" Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
+" Splits open at the bottom and right, which is non-badword, unlike vim defaults.
 set splitbelow splitright
 
-" Save close NERDTree on leaVE
+" Save close NERDTree on leave
 autocmd VimLeave * NERDTreeClose
+
+" Shortcut open and close NERDTree
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Put NERDTree on right side
 let g:NERDTreeWinPos = "right"
 
 " Airline
-let g:airline_theme='solarized'
+let g:airline_theme='deus'
 let g:airline#extensions#tabline#enabled = 1
-
-" Nerd tree
-map <C-n> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Unmap Ex mode
 map Q <nop>
