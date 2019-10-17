@@ -4,7 +4,7 @@
 	<info>https://wsbf.net or 88.1 FM</info>
 	<trackList>
 		<track>
-			<title>Best</title>
+			<title>WSBF Clemson [320 kbps]</title>
 			<annotation>320 kbps</annotation>
 			<location>https://wsbf.net/stream/320.mp3</location>
 			<extension application="http://www.videolan.org/vlc/playlist/0">
@@ -13,7 +13,7 @@
 			</extension>
 		</track>
 		<track>
-			<title>Better</title>
+			<title>WSBF Clemson [240 kbps]</title>
 			<annotation>240 kbps</annotation>
 			<location>https://wsbf.net/stream/high</location>
 			<extension application="http://www.videolan.org/vlc/playlist/0">
@@ -22,7 +22,7 @@
 			</extension>
 		</track>
 		<track>
-			<title>Worst</title>
+			<title>WSBF Clemson [120 kbps]</title>
 			<annotation>128 kbps</annotation>
 			<location>https://wsbf.net/stream/low</location>
 			<extension application="http://www.videolan.org/vlc/playlist/0">
