@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist xmlns="http://xspf.org/ns/0/" version="1">
+	<title>High Test Music</title>
+	<info>hosted on https://youtube.com/</info>
+	<trackList>
+		<track>
+			<title>High Test Music</title>
+			<annotation>youre actually so cool</annotation>
+			<location>https://www.youtube.com/playlist?list=PLLFKwqZdsS-UW5RRupm12zcmrM7BNs7Pf</location>
+		</track>
+	</trackList>
+</playlist>
