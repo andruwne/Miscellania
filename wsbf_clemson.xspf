@@ -4,30 +4,36 @@
 	<info>https://wsbf.net or 88.1 FM</info>
 	<trackList>
 		<track>
-			<location>https://wsbf.net/stream/low</location>
-			<title>Low</title>
-			<annotation>210 kbps</annotation>
-			<extension application="http://www.videolan.org/vlc/playlist/0">
-				<vlc:id>0</vlc:id>
-				<vlc:option>network-caching=1000</vlc:option>
-			</extension>
-			<location>https://wsbf.net/stream/high</location>
-			<title>Medium</title>
-			<annotation>192 kbps</annotation>
-			<extension application="http://www.videolan.org/vlc/playlist/0">
-				<vlc:id>0</vlc:id>
-				<vlc:option>network-caching=1000</vlc:option>
-			</extension>
-			<location>https://wsbf.net/stream/320</location>
-			<title>High</title>
+			<title>Best</title>
 			<annotation>320 kbps</annotation>
+			<location>https://wsbf.net/stream/320.mp3</location>
 			<extension application="http://www.videolan.org/vlc/playlist/0">
 				<vlc:id>0</vlc:id>
+				<vlc:option>network-caching=1000</vlc:option>
+			</extension>
+		</track>
+		<track>
+			<title>Better</title>
+			<annotation>240 kbps</annotation>
+			<location>https://wsbf.net/stream/high</location>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>1</vlc:id>
+				<vlc:option>network-caching=1000</vlc:option>
+			</extension>
+		</track>
+		<track>
+			<title>Worst</title>
+			<annotation>128 kbps</annotation>
+			<location>https://wsbf.net/stream/low</location>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>2</vlc:id>
 				<vlc:option>network-caching=1000</vlc:option>
 			</extension>
 		</track>
 	</trackList>
 	<extension application="http://www.videolan.org/vlc/playlist/0">
 		<vlc:item tid="0"/>
+		<vlc:item tid="1"/>
+		<vlc:item tid="2"/>
 	</extension>
 </playlist>
