@@ -1,7 +1,9 @@
 = Personal Notes =
-+ Create program to parse youtube playlist and recover the information on the video
++ Create program to parse youtube and recover the information on the video
 + Create server to distribute host a syncing service
 + Create syncing service
 + Update documentation on all projects
 + Create 'litterarum' language files for popular text editors
 + Create permalink system
++ Create program to parse youtube playlist into a xpls file
++ SERIOUSLY fix your documentation. its all over the place
